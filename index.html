@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#6f2117">
+    <meta name="description" content="输入你现在真实的月薪，看看穿越大明会是什么身份、品级与名义年俸。">
+    <title>穿越大明当大官｜测测你在大明是什么咖位</title>
+    <link rel="preload" as="image" href="./assets/cover.jpg">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js?v=3"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="cover" aria-labelledby="page-title">
+        <img class="cover-art" src="./assets/cover.jpg" alt="穿越大明当大官：明代豪华府邸、金银财宝与官员家眷">
+        <h1 id="page-title" class="visually-hidden">穿越大明当大官</h1>
+        <form id="salary-form" class="salary-form" novalidate>
+          <label for="salary" class="visually-hidden">输入你现在真实的月薪，单位元</label>
+          <input
+            id="salary"
+            name="salary"
+            class="salary-input"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            aria-describedby="salary-error"
+            placeholder="例如：12,000元"
+          >
+          <p id="salary-error" class="error-message" role="alert" aria-live="polite"></p>
+          <button class="submit-hit-area" type="submit" aria-label="点击测试">
+            <span class="visually-hidden">点击测试</span>
+          </button>
+        </form>
+      </section>
+
+      <p class="privacy-note">仅用于趣味测试，输入的月薪不会上传或保存。</p>
+    </main>
+  </body>
+</html>
